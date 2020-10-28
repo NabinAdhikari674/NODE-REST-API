@@ -1,0 +1,35 @@
+{
+    "ROLES" : [ "ADMIN","CLIENT","STAFF","USER","GUEST" ],
+    "LEVELS" : [ "PRIVATE","PUBLIC","SHARED"],
+    "ACTIONS" : [ "VIEW","CREATE","PATCH","DELETE" ],
+    "PERMISSIONS" : {
+        "ADMIN" : {
+            "PRIVATE" : ["VIEW","CREATE","PATCH","DELETE"],
+            "PUBLIC" : ["VIEW","CREATE","PATCH","DELETE"]
+        },
+        "CLIENT" : {
+            "PRIVATE" : ["VIEW","CREATE","PATCH","DELETE"],
+            "PUBLIC" : ["VIEW","DELETE"]
+        },
+        "STAFF" : {
+            "PRIVATE" : ["VIEW","CREATE","PATCH","DELETE"],
+            "PUBLIC" : ["VIEW"]
+        },  
+        "USER" : {
+            "PRIVATE" : ["VIEW","CREATE","PATCH","DELETE"],
+            "PUBLIC" : ["VIEW"]
+        },
+        "GUEST" : {
+            "PUBLIC" : ["VIEW"]
+        }
+    },
+    "USERS" : {
+        "ADMIN" : [
+            "5f8beaf9884139094cd74dd2"
+        ],
+        "CLIENT": [],
+        "STAFF" : [],
+        "USER"  : [],
+        "GUEST" : []
+    }
+}
